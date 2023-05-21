@@ -22,3 +22,7 @@
     * You have to move this file to your wireshark directory.
     * You must build wireshark with this file.
 
+* Clone wireshark codes
+```
+git clone https://gitlab.com/wireshark/wireshark.git
+```
