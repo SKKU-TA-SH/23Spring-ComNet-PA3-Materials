@@ -6,6 +6,7 @@
 
 1. mkcscope.sh
     * Make cscope.out files for cscope.
+    * Move mkscscope.sh files to user's home directory, then you can use cscope shell script whenever you want.
     * Run `bash ~/mkcscope.sh` in the source code directory.
 2. .ripgreprc & ripgrep.conf
     * Several configurations for ripgrep.
