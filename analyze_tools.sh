@@ -22,8 +22,8 @@ else
 fi
 
 # Install essential applications
-echo "sudo apt install build-essential vim git exuberant-ctags cscope"
-sudo apt install build-essential vim git exuberant-ctags cscope
+echo "sudo apt install build-essential vim git wget curl exuberant-ctags cscope"
+sudo apt install build-essential vim git wget curl exuberant-ctags cscope
 
 # Change configurations
 echo "cp ./mkcscope.sh ~/"
