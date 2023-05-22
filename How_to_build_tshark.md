@@ -35,7 +35,7 @@ mv ./23Spring-ComNet-PA3-Materials/CMakeList.txt ./wireshark/
 8. Make Makefile with cmake
 ```
 cd ./wireshark/
-cmake -DBUILD_wireshark=OFF -DBUILD_tshark=ON -DBUILD_ComNet_PA3_tshark=ON
+cmake -DBUILD_wireshark=OFF -DBUILD_tshark=OFF -DBUILD_ComNet_PA3_tshark=ON
 ```
 9. Build ComNet\_PA3\_tshark
 ```
@@ -63,7 +63,7 @@ sudo ./run/ComNet_PA3_tshark -i <interface name> -qz io,stat,0.1,"SUM(frame.len)
 
 1. Make your own tshark file
 ```
-mv ComNet_PA3_tshark.c <student ID>_tshark.c
+cp ComNet_PA3_tshark.c <student ID>_tshark.c
 ```
 2. Modify CMakeList.txt
 ```
@@ -72,11 +72,11 @@ grep -IHnr "ComNet PA3"
 # Open CMakeList.txt
 vi CMakeList.txt
 # Then modify CMakeList.txt with given code with comment "ComNet PA3"
-# Change ComNet_PA3_tshark to <student ID>_tshark
+# Copy and change ComNet_PA3_tshark to <student ID>_tshark
 ```
 3. Make Makefile with cmake
 ```
-cmake -DBUILD_wireshark=OFF -DBUILD_tshark=ON -DBUILD_<student ID>_tshark=ON
+cmake -DBUILD_wireshark=OFF -DBUILD_tshark=OFF -DBUILD_<student ID>_tshark=ON
 ```
 4. Build your tshark
 ```
