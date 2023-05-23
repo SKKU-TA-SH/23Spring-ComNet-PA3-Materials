@@ -28,9 +28,9 @@ bash ./23Spring-ComNet-PA3-Materials/requirements_wireshark.sh
 ```
 mv ./23Spring-ComNet-PA3-Materials/ComNet_PA3_tshark.c ./wireshark/
 ```
-7. Move CMakeList.txt to wireshark directory
+7. Move CMakeLists.txt to wireshark directory
 ```
-mv ./23Spring-ComNet-PA3-Materials/CMakeList.txt ./wireshark/
+mv ./23Spring-ComNet-PA3-Materials/CMakeLists.txt ./wireshark/
 ```
 8. Make Makefile with cmake
 ```
@@ -65,13 +65,13 @@ sudo ./run/ComNet_PA3_tshark -i <interface name> -qz io,stat,0.1,"SUM(frame.len)
 ```
 cp ComNet_PA3_tshark.c <student ID>_tshark.c
 ```
-2. Modify CMakeList.txt
+2. Modify CMakeLists.txt
 ```
 # Find source code to copy
 grep -IHnr "ComNet PA3"
-# Open CMakeList.txt
-vi CMakeList.txt
-# Then modify CMakeList.txt with given code with comment "ComNet PA3"
+# Open CMakeLists.txt
+vi CMakeLists.txt
+# Then modify CMakeLists.txt with given code with comment "ComNet PA3"
 # Copy and change ComNet_PA3_tshark to <student ID>_tshark
 ```
 3. Make Makefile with cmake
